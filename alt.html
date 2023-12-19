@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iB5+f47P6+f+8gezv0eq0G8GuMi56UHD4m9KdlBRZI98tIxt5Yb3a9MiSpw0Nti6Gwf2ysysTZlEf60GdO5QTQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>PARADIGM WEBSITE</title>
+
+    <style>
+
+        body {
+            background-color: #202020;
+            color: orange;
+            margin: 0; /* Remove default body margin */
+        }
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .middle, .bottom {
+            width: 99%;
+            height: 60vh;
+            background-color: #606060; /* Change this color to your preference */
+            margin: 5px;
+        }
+
+        .middle {
+            height: 50vh;
+        }
+
+        .top {
+            display: flex;
+            gap: 1px;
+        }
+
+        .sm {
+            flex-basis: 10%;
+            background-color: black;
+            padding: 10px; /* Add some padding for better readability */
+        }
+        
+
+        .pic-text {      
+        display: flex;
+        flex-direction:row;
+        gap: 7px;
+        justify-content: space-between;
+
+        position: absolute;
+        top: 15px; /* Adjust the top position as needed */
+        left: 10px; /* Adjust the left position as needed */
+        z-index: 1; /* Ensure text is above the image */
+    }
+
+  
+        .top img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+
+        .top-text-size{
+            text-decoration: none; /*Removes lining from text*/
+            font-size: 10px;
+            margin: 3px;
+            color: white; /* Set text color */
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div class="top">
+            <div class="sm">
+                
+                <p><img src="./photos/Logo.jpg"  alt="Description of the image"></p>
+                <p><a href="#" src="./photos/instagram.svg" style="text-decoration: none;">F</a></p>
+                <p><a href="#" style="text-decoration: none;">X</a>X</p>
+                <p><a href="#" style="text-decoration: none;">I</a>I</p>
+                <p><a href="#" style="text-decoration: none;"></a>S</p>
+
+                
+            </div>
+
+            <div class="pic">
+                <!-- Text Box above the image -->
+                <div class="pic-text">
+
+                    <a href="#" class="top-text-size">About US</a>
+                    <p href="#" class="top-text-size" >Vision & Mission</p>
+                    <p href="#" class="top-text-size" >Events</p>
+                    <p href="#" class="top-text-size" >Calender</p>
+                    <p href="#" class="top-text-size" >Calender</p>
+
+                    
+                    <!-- Add more text boxes as needed -->
+
+                </div>
+                
+               
+                <!-- Image -->
+                <img src="./photos/Logo.jpg" alt="Description of the image">
+            </div>
+        </div>
+
+        <div class="middle"></div>
+        <div class="bottom"></div>
+    </div>
+</body>
+</html>

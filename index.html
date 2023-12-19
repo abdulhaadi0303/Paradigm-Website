@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iB5+f47P6+f+8gezv0eq0G8GuMi56UHD4m9KdlBRZI98tIxt5Yb3a9MiSpw0Nti6Gwf2ysysTZlEf60GdO5QTQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>PARADIGM WEBSITE</title>
+
+    <style>
+
+body {
+    background-color: #202020;
+    color: orange;
+    margin: 0; /* Remove default body margin */
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+    .header, .middle, .bottom {
+        width: 100%;
+        height: 60vh;
+        background-color:#181818; /* Change this color to your preference */
+        margin: 5px;
+    }
+    .middle {
+        height: 50vh;
+    }
+
+    /* Heder Style starts */
+        .header {
+            display: flex;
+            gap: 1px;
+        }
+            .sm {
+                flex-basis: 15%;
+                background-color: black;
+                text-align: center;
+                padding-top: 0 px;
+            }  
+            .img-div{
+                flex-basis: 85%;                        
+            } 
+            
+            .header-text{
+                position: absolute;
+                flex-wrap: wrap;
+                margin-left:5%;
+                display: flex;
+                flex-direction: row;
+                gap: 7px;
+                font-size: 0.8rem;
+                /* justify-content:flex-end; */
+                z-index: 1;                
+            }
+            @media (min-width: 700px) {
+            .header-text {
+                margin-left:25%;
+                 gap: 12px;
+                flex-wrap: nowrap; /* Ensure items don't wrap in a row */
+                font-size: 1.1rem;
+                }
+                .sm{
+                    font-size:35px;
+                }
+        }
+            .pic-div {
+              height: 100%;
+              width: 100%;
+            }
+            .pic{
+                height:100%;
+                width: 100%;
+            } 
+
+
+            /* Header Style ends here */
+
+        .middle{
+            display: flex;
+            gap: 5px;
+            justify-content:center;
+            align-items: center;
+
+        }
+
+            .middle-divs{
+                background-color: antiquewhite;
+                height: 75%;
+                width: 20%;
+            }
+
+        .bottom{
+            display: flex;
+            gap: 1px;
+            justify-content:center;
+            align-items: center;
+        }
+
+            .bottom-divs {
+                background-color: antiquewhite;
+                height: 99%;
+                width: 25%;
+            }
+
+    </style>
+</head>
+
+<body>
+
+    <main class="main-container">
+        <!-- <div>sdadas</div> -->
+
+<!-- HEADER SECTION-->
+
+        <section class="header">
+
+            <div class="sm">
+                <p><img src="./photos/Logo.jpg" height="90px" width="90px"></p>
+                <p>A</p>
+                <p>A</p>
+                <p>A</p>  
+                <p>A</p>
+                <p>A</p>  
+
+            </div>
+
+            <div class="img-div"> 
+
+                <div class="header-text">
+                    <p>About Us</p>
+                    <p>Events</p>
+                    <p>News</p>
+                    <p>Other</p>
+
+                </div>          
+                <!-- Image -->
+                <div class="pic-div">    
+                    <img class="pic" src="./photos/r.JPG" alt="Description of the image">
+                </div>
+            </div>
+
+            
+        </section>
+
+        <section class="middle">
+            <div class="middle-divs"></div>
+            <div class="middle-divs"></div>
+            <div class="middle-divs"></div>
+        </section>
+        <section class="bottom">
+            <div class="bottom-divs"></div>
+            <div class="bottom-divs"></div>
+            <div class="bottom-divs"></div>
+            <div class="bottom-divs"></div>
+
+        </section>
+
+    </main>
+</body>
+</html>
