@@ -29,7 +29,7 @@ body {
         margin:1px;
     }
     .middle {
-        height: 300px;
+        height: 250px;
     }
 
     /* Heder Style starts */
@@ -37,29 +37,44 @@ body {
             display: flex;
             gap: 1px;
         }
+
+        /*
+            SIDE-BAR
+        */
             .sm {
-                flex-basis: 15%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                flex-basis: 13%;
                 background-color:#202020;
                 text-align: center;
-                padding-top:0px;
+               
             }  
             .top-logo{
                 margin-top: 0px;
+                position: absolute;
+                z-index: 1;
+                height: 10%;
+                width: 20%;
             }
             @media(min-width: 700px){
-                .top-logo-pic{
-                    height: 120px;
+                .top-logo{
+                    height: 15%;
                 }
             }
+
+            /*
+                LEFT-BAR
+            */
             
             .img-div{
-                flex-basis: 85%;                        
+                flex-basis: 87%;                        
             } 
             
             .header-text{
                 position: absolute;
                 flex-wrap: wrap;
-                margin-left:5%;
+                margin-left:25%;
                 display: flex;
                 flex-direction: row;
                 gap: 7px;
@@ -70,9 +85,9 @@ body {
             @media (min-width: 700px) {
             .header-text {
                 margin-left:25%;
-                 gap: 12px;
+                gap: 20px;
                 flex-wrap: nowrap; /* Ensure items don't wrap in a row */
-                font-size: 1.1rem;
+                font-size: 1.3rem;
                 }
                 
         }
@@ -90,7 +105,7 @@ body {
 
         .middle{
             display: flex;
-            gap: 5px;
+            gap: 1px;
             justify-content:center;
             align-items: center;
 
@@ -98,8 +113,8 @@ body {
 
             .middle-divs{
                 background-color: antiquewhite;
-                height: 70%;
-                width: 20%;
+                height: 90%;
+                width: 23%;
             }
 
         .bottom{
@@ -121,15 +136,15 @@ body {
 <body>
 
     <main class="main-container">
-        <!-- <div>sdadas</div> -->
+     
 
 <!-- HEADER SECTION-->
 
         <section class="header">
 
+            <div class="top-logo"><img class="top-logo-pic" src="./photos/Logo.jpg" height="100%" width="100%"></div>
             <div class="sm">
-                <p class="top-logo"><img class="top-logo-pic" src="./photos/Logo.jpg" height="66px" width="100%"></p>
-                <p>A</p>
+                <p>B</p>
                 <p>A</p>
                 <p>A</p>  
                 <p>A</p>
